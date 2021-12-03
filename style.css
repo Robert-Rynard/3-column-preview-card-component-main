@@ -1,0 +1,81 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dk-cyan: hsl(184, 100%, 22%);
+  --v-dk-cyan: hsl(179, 100%, 13%);
+  --trans-white: hsla(0, 0%, 100%, 0.75);
+  --lt-gray: hsl(0, 0%, 95%);
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--trans-white);
+  background-color: var(--lt-gray);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 1rem;
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 20rem;
+}
+
+.card {
+  padding: 2rem 4rem;
+}
+
+.card > * {
+  padding: 0.75rem 0;
+}
+
+.card h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.card button {
+  border-radius: 32px;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--lt-gray);
+  border: none;
+  color: inherit;
+  margin-top: 1rem;
+}
+
+.card--sedan {
+  background-color: var(--bright-orange);
+}
+
+.card--sedan button {
+  color: var(--bright-orange);
+}
+
+.card--suv {
+  background-color: var(--dk-cyan);
+}
+
+.card--suv button {
+  color: var(--dk-cyan);
+}
+
+.card--luxury {
+  background-color: var(--v-dk-cyan);
+}
+
+.card--luxury button {
+  color: var(--v-dk-cyan);
+}
+
+@media (min-width: 90ch) {
+  .main {
+    flex-direction: row;
+    max-width: 60rem;
+  }
+}
