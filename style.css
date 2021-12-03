@@ -49,6 +49,12 @@ body {
   margin-top: 1rem;
 }
 
+.card button:hover {
+  color: var(--trans-white);
+  outline: 2px solid var(--trans-white);
+  background-color: transparent;
+}
+
 .card--sedan {
   background-color: var(--bright-orange);
 }
